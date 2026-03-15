@@ -28,7 +28,7 @@ requirements:
     - maturin >=1.0,<2.0
   run:
     - python
-    - rustling >=0.6.0
+    - rustling >=0.7.0
 
 tests:
   - python:
