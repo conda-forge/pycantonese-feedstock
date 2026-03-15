@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "4.0.0"
+  version: "4.1.0"
 
 package:
   name: pycantonese
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pycantonese/pycantonese-${{ version }}.tar.gz
-  sha256: 7c52803eaef0439a791296ea7da692d0f52fc89ae318e0b2b48089d514378236
+  sha256: f56cab5ac0b001ce95b614a9a5b6de75c35a1b625959c79195f64e257457e482
 
 build:
-  number: 1
+  number: 0
   script:
     - cargo-bundle-licenses --format yaml --output ./THIRDPARTY.yml
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -28,7 +28,7 @@ requirements:
     - maturin >=1.0,<2.0
   run:
     - python
-    - rustling >=0.6.0
+    - rustling >=0.7.0
 
 tests:
   - python:
