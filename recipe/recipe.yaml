@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "4.1.0"
+  version: "4.2.0"
 
 package:
   name: pycantonese
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pycantonese/pycantonese-${{ version }}.tar.gz
-  sha256: f56cab5ac0b001ce95b614a9a5b6de75c35a1b625959c79195f64e257457e482
+  sha256: 5a9ec7a8a10b08ef0ff12772b51c6f7a22727503bfbeb9edfea4eb90fc77d68c
 
 build:
   number: 0
